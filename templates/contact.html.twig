@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+	<head>
+		<title>Belles de Jour - Contact</title>
+		<meta charset="utf-8">
+			<!--Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		
+			<!--Responsive-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!--Icones-->
+		<!--Lien CSS-->
+		<link rel="stylesheet" type="text/css" href="css/reset2.css">
+		<link rel="stylesheet" type="text/css" href="css/contact.css">
+
+		<script src="js/jquery-3.4.1.min.js"></script>
+
+			<!--Lien FavIcon-->
+			<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+			<link rel="icon" href="img/favicon.ico" type="image/x-icon">	
+	</head>
+	<body>
+
+	<header id="headersmall">
+		<picture>
+		  <source srcset="img/bg.jpg" media="(max-width: 719px)">
+		  <source srcset="img/bg3.png" media="(max-width: 1500px)">
+		  <img src="img/bg3.jpg" alt="background_image">
+		</picture>
+		
+		<img id="logo" src="img/logo.svg">
+	</header>
+<div class="modal hidden" id="modal">
+	<h4 id="modalTitre">Un e-mail a bien été envoyé <br> <span style="margin-top: 2%; display: inline-block">Oceane vous contactera sous peu pour convenir d'un rendez vous </span></h4>
+	<button id="modalBouton">Fermer</button>
+</div>
+	<main>
+		<!--DIV Croix -->
+		<div>
+			<a  href="/">
+				<img src="img/close.png" alt="Icône fermeture" id= "icone_close">
+			</a>
+		</div><br>
+		
+		
+		<!--Section 1 Icône + Titre -->
+		<section id="titre">	
+			<h2> je prends rdv</h1>
+			<div>
+			<img src="img/contact.svg" alt="Icône contact" id= "icone_bulle">
+			</div>
+		</section>
+
+			<!--Section 2 Formulaire-->
+		<section  id="section_formulaire">
+			<div>
+				<form>
+				
+				    <input for="lname" type="text" id="lname" name="lname" placeholder="Nom" required>
+				    <br><br>
+					 
+					 <input for="fname" type="text" id="fname" name="fname" placeholder="Prénom" required>
+				    <br><br>
+					 
+				    <input for="email"type="email" id="email" name="email" placeholder="Email" minlength=9 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+				    <br><br>
+					 						
+					<span id="section_formulaire_liste">
+
+					<h3>Vos prestations</h3>
+					{% for key, categorie in prestations %}
+	{% if key == 'Manucure' %}
+	<h4>Soins mains & pieds</h4>
+	<ul class="checkboxes" id="menu1">
+			
+	   {% for prestation in categorie %}
+	   <li>
+			<label for="presta" class="label--checkbox">
+	  				 <input id="presta" name="presta" data-id="{{prestation.id}}" data-name="{{prestation.name}}" type="checkbox" class="checkbox">{{prestation.name}} - {{prestation.price}}€
+			</label>
+		</li> 
+	   {% endfor %}
+	   </ul>
+	   {% endif %}
+   {% if key == 'Soins' %}
+   <h4>Soins visage & corps</h4>
+   <ul class="checkboxes" id="menu2">
+		   {% for prestation in categorie %}
+		   <li>
+				<label for="presta" class="label--checkbox">
+						   <input id="presta" name="presta" data-id="{{prestation.id}}" data-name="{{prestation.name}}" type="checkbox" class="checkbox">{{prestation.name}} - {{prestation.price}}€
+				</label>
+			</li> 
+		   {% endfor %}
+	   </ul>
+	   {% endif %}
+   {% if key == 'Epilation' %}
+   <h4>Epilations</h4>
+   <ul class="checkboxes" id="menu3">
+	   {% for prestation in categorie %}
+	   <li>
+			<label for="presta" class="label--checkbox">
+					   <input id="presta" name="presta" data-id="{{prestation.id}}" data-name="{{prestation.name}}" type="checkbox" class="checkbox">{{prestation.name}} - {{prestation.price}}€
+			</label>
+		</li> 
+		   {% endfor %}
+		   </ul>
+	   {% endif %}
+{% endfor %}
+
+						
+					</span>
+						<br><br>
+
+					<button id="btnSubmit" class="btn" name="register" type="submit">SOUMETTRE</button>
+				</form>
+			</div>
+		</section>
+		
+	</main>
+			
+
+
+	<footer>
+<hr>
+		<!-- Liste Socials -->
+			<ul class="socials">
+						<li>
+							<a href="https://www.instagram.com/bellesdejour_/?hl=fr" target="_blank"><img src="img/instagram.svg"></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/twitter.svg"></a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/bellesdejour77/"><img src="img/facebook.svg"></a>
+						</li>
+			</ul>
+			
+			<a href="mentions.html" id="mentions">Mentions Legales</a>
+	</footer>
+
+
+		<!--LIENS JS--> 
+
+		<!--CDN : avec connexion Internet-->
+		<!--<script
+	  			src="https://code.jquery.com/jquery-3.3.1.js"
+	  			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	  			crossorigin="anonymous"></script>-->
+
+  		<!--CDN : sans connexion Internet-->
+  		<!--<script src="js/jquery-3.3.1.js"></script>-->
+
+		<!--<script src="js/script.js"></script>-->
+	<script src="js/contact.js"></script>
+	</body>
+</html>

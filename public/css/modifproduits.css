@@ -1,0 +1,137 @@
+  @media (min-width: 1100px) {
+    #descriptionprod {
+        font-size: 22px !important;
+    }
+
+    /* produits */
+    .corps-texte {
+        font-size: 20px !important;
+        line-height: 1.8rem !important;
+        width: 60% !important;
+    }
+
+    .navdesk {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 1%;
+    }
+
+    .navdesk li {
+        display: list-item;
+        width: 13%;
+        height: 100%;
+        padding-bottom: 21% !important;
+        position: relative;
+        list-style-type: none;
+        padding: 11px !important;
+        margin: 1% 2%;
+        background: #F7E6E1;
+    }
+
+    .navdesk a {
+        position: absolute;
+        top: -11px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-family: 'funkturm';
+        color: #73A8A2;
+        font-size: 24px;
+    }
+
+
+
+
+
+    #mentions {
+        margin-top: 0;
+        justify-content: center;
+        display: flex;
+        font-size: 16px;
+        margin-bottom: 2%;
+    }
+
+
+
+    #avis h2 {
+        margin-top: 6%;
+    }
+
+
+
+    .rdv {
+        display: block;
+    }
+
+
+    .rdv a {
+        text-decoration: none;
+        font-family: 'funkturm';
+        text-align: center;
+        background-color: white;
+        border-radius: 67px;
+        padding-left: 67;
+        padding-right: 67px;
+        padding-top: 28px;
+        padding-bottom: 28px;
+        color: #73a8a2;
+        border-style: solid;
+        border-width: 7px;
+        border-color: #73a8a2;
+        text-transform: uppercase;
+        font-size: 35px;
+
+    }
+
+    .rdv a:hover {
+        text-decoration: none;
+        font-family: 'funkturm';
+        text-align: center;
+        background-color: #73a8a2;
+        border-radius: 67px;
+        padding-left: 67;
+        padding-right: 67px;
+        padding-top: 28px;
+        padding-bottom: 28px;
+        color: #73a8a2;
+        border-style: solid;
+        border-width: 7px;
+        border-color: #73a8a2;
+        text-transform: uppercase;
+        font-size: 35px;
+        color: white;
+        opacity: 80%;
+
+    }
+
+    .rdv {
+        margin-left: 33%;
+        margin-bottom: 5%;
+        margin-top: 26%;
+    }
+
+    .slider-container {
+        margin-bottom: 21%;
+    }
+
+
+
+
+    #mentions {
+        margin-top: 0;
+        justify-content: center;
+        display: flex;
+        font-size: 16px;
+        margin-bottom: 2%;
+    }
+
+
+
+
+
+  }
+
+
+
+  }

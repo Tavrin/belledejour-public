@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style3.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<title>Belles de Jour</title>
+	<!--Lien FavIcon-->
+			<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+			<link rel="icon" href="img/favicon.ico" type="image/x-icon">	
+</head>
+
+<body>
+	<header id="headersmall">
+		<a href="/"><img id="logo" src="img/logo.png"></a>
+
+	</header>
+
+	<div id="navdesktop">
+		<ul class="navdesk">
+			<li style="width:7%;"><a href="/prestations">Offres</a><i></i></li>
+			<li><a href="/produits">Produits</a></li>
+			<li style="width: 8%;"><a href="/contact">Contact</a></li>
+		</ul>
+	</div>
+
+	<section>
+		<h2>Offres</h2>
+		<section id="slideroffres">
+
+			<div class="tab">
+				<button class="tablinks active" onclick="Offres(event, 'manucure')">manucure</button>
+				<button id="boutonsoin" class="tablinks" onclick="Offres(event, 'soins')">soins</button>
+				<button class="tablinks" onclick="Offres(event, 'epilation')">epilation</button>
+
+			</div>
+
+			{% for key, categorie in prestations %}
+							 {% if key == 'Manucure' %}
+								<article id="manucure" class="tabcontent">
+								<ul class=colonne1>
+								{% for prestation in categorie %}
+									<li>{{prestation.name}} <p>{{prestation.price}}</p></li>
+								{% endfor %}
+								</ul>
+								</article>
+								{% endif %}
+							{% if key == 'Soins' %}
+							<article id="soins" class="tabcontent">
+									<ul class=colonne1>
+									{% for prestation in categorie %}
+										<li>{{prestation.name}} <p>{{prestation.price}}</p></li>
+									{% endfor %}
+								</ul>
+								</article>
+								{% endif %}
+							{% if key == 'Epilation' %}
+								<article id="epilation" class="tabcontent">
+								<ul class=colonne1>
+								{% for prestation in categorie %}
+									<li>{{prestation.name}} <p>{{prestation.price}}</p></li>
+									{% endfor %}
+									</ul>
+								</article>
+								{% endif %}
+						{% endfor %}
+		</section>
+	</section>
+	{% for key, categorie in prestations %}
+	{% if key == 'Manucure' %}
+	   <article id="manucure-responsive">
+			<h1>manucure</h1>
+	   <ul>
+	   {% for prestation in categorie %}
+		   <li>{{prestation.name}} <p>{{prestation.price}}€</p></li>
+	   {% endfor %}
+	   </ul>
+	   </article>
+	   {% endif %}
+   {% if key == 'Soins' %}
+   <article id="soins-responsive">
+		<h1>soins</h1>
+		   <ul>
+		   {% for prestation in categorie %}
+			   <li>{{prestation.name}} <p>{{prestation.price}}€</p></li>
+		   {% endfor %}
+	   </ul>
+	   </article>
+	   {% endif %}
+   {% if key == 'Epilation' %}
+	   <article id="epilation-responsive">
+			<h1>epilation</h1>
+	   <ul>
+	   {% for prestation in categorie %}
+		   <li>{{prestation.name}} <p>{{prestation.price}}€</p></li>
+		   {% endfor %}
+		   </ul>
+	   </article>
+	   {% endif %}
+{% endfor %}
+	
+
+	<section class="rdv">
+		<a href="#">Je prends RDV</a>
+	</section>
+
+	<section>
+		<h2>Qu'en disent-ils ?</h2>
+	</section>
+
+	<footer>
+		<ul class="socials">
+			<li id="insta">
+				<a href="https://www.instagram.com/bellesdejour_/?hl=fr" target="_blank"><img src="img/instagram.svg"></a>
+			</li>
+			<li>
+				<a href="#"><img src="img/twitter.svg"></a>
+			</li>
+			<li>
+				<a href="https://www.facebook.com/bellesdejour77/" target="_blank"><img src="img/facebook.svg"></a>
+			</li>
+		</ul>
+		<a id="mentions" href="">Mentions Legales</a>
+	</footer>
+	<section id="nav">
+
+		<nav>
+			<hr>
+			<ul>
+				<li id="pictopresta"><a href="prestations.html"><img class="pictosnav" src="img/prestations.svg"></a></li>
+				<li id="pictocontact"><a href="rdv.html"><img class="pictosnav" src="img/contact.svg"></a></li>
+				<li id="pictoproduit"><a href="produits.html"><img class="pictosnav" src="img/produit.svg"></a></li>
+			</ul>
+		</nav>
+	</section>
+
+	<script>
+		window.onload = function(manucureload) {
+			manucure.style.display = 'block';
+		};
+
+		function Offres(evt, offresName) {
+			var i, tabcontent, tablinks;
+			i = i++
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].classList.remove("active");
+			}
+			document.getElementById(offresName).style.display = "block";
+			evt.currentTarget.classList.add("active");
+		}
+	</script>
+
+</body>
+
+</html>

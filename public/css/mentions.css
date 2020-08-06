@@ -1,0 +1,75 @@
+/*MOBILE FIRST 320*/
+@font-face {
+    font-family: "funkturm";
+    src: url("../font/Funkturm.ttf") format("truetype");
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+body {
+
+  position: relative;
+
+}
+
+header {
+  height: 525px;
+}
+
+header img{
+  /*background: url(../img/bg.jpg) no-repeat;*/
+  top: 0px;
+  left: 0px;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+
+}
+
+header #logo{
+  position: relative;
+  top: -400px;
+  width: 60%;
+  left: 199px;
+
+}
+
+header p{
+    position: relative;
+    width: 65%;
+    height: auto;
+    top: -353px;
+    left: 28px;
+    font-family: 'Raleway';
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+section h2{
+  color : #707070;
+  text-align: center;
+  padding: 20px;
+  font-family: 'funkturm';
+  color: #73A8A2;
+  font-size: 70px;
+}
+
+#mentions p{
+    font-size: 12px;
+    line-height: 55px;
+    font-family: 'Raleway';
+	color: #707070;
+	text-align: center;
+	margin-right: 20px;
+	margin-left: 20px;
+}

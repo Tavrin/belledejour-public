@@ -1,0 +1,78 @@
+body{
+    background: rgb(238, 238, 238);
+}
+.titreLogin{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(70, 70, 70);
+}
+.login-form{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    padding: 3rem;
+    background: rgb(255, 255, 255);
+    margin: 10% auto;
+    width: 15%;
+text-align: center ;
+}
+
+#loginForm{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+.login-input{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: 1% 0;
+    
+}
+
+#loginForm input{
+    outline: 0;
+    border: 0;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    margin: 0 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+
+  form button:hover,form button:active,form button:focus {
+    background: #43A047;
+  }
+
+@media (max-width: 1300px){
+    .login-form{
+        width: 80%;
+        height: 50%;
+    }
+    .titreLogin{
+        font-size: 5rem;
+    }
+    #loginForm input{
+        margin: 0 0 2rem;
+        padding: 3rem;
+        font-size: 3rem;
+    }
+
+    #loginForm button{
+        padding: 3rem;
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,472 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+@font-face {
+    font-family: "funkturm";
+    src: url("../font/Funkturm.ttf") format("truetype");
+}
+
+						/*320*/
+
+
+
+body {
+
+}
+
+		/*HEADER*/
+
+
+header img{
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+header #logo {
+    position: relative;
+    top: -128px;
+    width: 60%;
+    left: 5px;
+}
+
+		/*MAIN*/
+
+#icone_close {
+    display: block;
+    max-width: 10%;
+    position: absolute;
+    right: 8%;
+    top: 28%;
+    padding: 2px;
+}
+
+
+h2 {
+    text-transform: uppercase;
+    margin-top: -4%;
+    text-align: center;
+    color: #73a8a2;
+    font-family: 'funkturm';
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+h3{
+	margin: 20px 0;
+	text-align: center;
+	color: #b14961;
+	font-family: 'funkturm';
+	font-size: 25px;
+}
+
+h4{
+	margin: 10px 0 0;
+	text-align: center;
+	color: grey;
+	font-family:"Raleway";
+	font-size: 18px;
+}
+
+#titre div{
+	display: flex;
+}
+
+#icone_bulle {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 200px;
+}
+
+		/*FORMULAIRE*/
+		
+
+#section_formulaire{
+	margin: 2% 0 8%;
+}
+
+ form > input{
+	background-color: white;
+	border: 0.2px solid lightgrey;
+	box-shadow: 2px 2px 5px lightgrey;
+	text-align: left;
+	color: grey;
+	font-family:"Raleway";
+	font-size: 20px;
+	padding: 10px 20px;
+	border-radius: 25px;
+	width: 60%;
+}
+
+#menu1, #menu2, #menu3{
+	margin: 10px;
+	text-align: left;
+	width: 80%;
+	display: inline-block;
+}
+
+#section_formulaire li{
+	margin: 8px;
+}
+
+.checkboxes{
+	list-style-type: none;
+	padding: 0;
+	height: 300px;
+	width: 50%;
+	margin: auto;
+}
+
+
+#section_formulaire li input{
+	margin: 3px 8px;
+}
+
+.label--checkbox{
+	color: #707070;
+	font-family:"Raleway";
+	font-size: 14px;
+	text-align: left;
+	margin: 8px;
+}
+
+#btnSubmit{
+  background-color: white;
+  border: 3px solid #b14961;
+  border-radius : 40px;
+  color: #b14961;
+  font-family: 'funkturm';
+  padding: 16px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#btnSubmit:hover {
+  background-color: #b14961;
+  color: white;
+}
+
+		/*FOOTER*/
+
+hr {
+	margin: 5% 0;
+}
+
+footer {
+  width: 100%;
+}
+
+footer ul {
+  margin-left: 27%;
+  margin-right: 27%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+footer li {
+      width: 25%;
+}
+
+footer li:hover {
+      opacity: 0.5;
+}
+
+footer img {
+  width: 70%;
+}
+
+#mentions { 
+    text-decoration: none;  
+    font-size: 20px;  
+    font-family: 'raleway'; 
+    color: #707070; 
+    display: block; 
+    text-align: center; 
+    margin: 4%; 
+    text-decoration: underline #707070; 
+}
+
+
+
+			/*RESPONSIVE*/
+
+			/*450px*/
+@media screen and (min-width: 450px) {
+
+		header #logo{
+			position: absolute;
+			top: 10%;
+			left: 20%;
+			width: 65%; 
+		}
+
+		#icone_close {
+			max-width: 10%;
+			right: 8%;
+			top: 50%;
+		}
+
+
+		h2{
+			margin-top: 85px;
+			font-size: 32px;
+			margin-bottom: 30px;
+		}	
+		
+		h3{
+			margin: 15px;
+			font-size: 28px;
+		}
+		
+		h4{
+			margin: 10px 0 0;
+			font-size: 22px;
+		}
+		
+		 form > input{
+			font-size: 24px;
+			width: 70%;
+		}
+		
+		#btnSubmit{
+		  font-size: 24px;
+		}
+		
+		.label--checkbox{
+			font-size: 16px;
+			text-align: left;
+			margin: 8px;
+		}
+
+}
+
+			/*590px*/
+@media screen and (min-width: 590px) {
+
+		header #logo{
+			position: absolute;
+			top: 12%;
+			left: 20%;
+			width: 65%; 
+		}
+
+		#icone_close {
+			max-width: 10%;
+			right: 8%;
+			top: 60%;
+		}
+
+		h2{
+			margin-top: 100px;
+			font-size: 38px;
+			margin-bottom: 30px;
+		}	
+		
+		h3{
+			margin: 15px;
+			font-size: 36px;
+		}
+		
+		h4{
+			margin: 10px 0 0;
+			font-size: 28px;
+		}
+		
+		 form > input{
+			font-size: 30px;
+			width: 70%;
+		}
+		
+		#btnSubmit{
+		  font-size: 36px;
+		}
+		
+		.label--checkbox{
+			font-size: 18px;
+			text-align: left;
+			margin: 8px;
+		}
+		
+		#menu1, #menu2, #menu3{
+			heigth: auto;
+			margin-bottom: 0 10px 15px;
+			width: 85%;
+			display: inline;
+}
+
+}
+
+			/*720px*/
+@media screen and (min-width: 720px) {
+
+		header img{
+			object-fit: cover;
+			height: auto;
+			position: relative;
+		}
+
+		header #logo{
+			position: absolute;
+			top: 10%;
+			left: 5%;
+			width: 40%; 
+		}
+
+		#icone_close {
+			max-width: 8%;
+			right: 6%;
+			top: 40%;
+		}
+
+		h2{
+			margin-top: 90px;
+			font-size: 38px;
+			margin-bottom: 30px;
+		}	
+		
+		h3{
+			margin: 15px;
+			font-size: 36px;
+		}
+		
+		h4{
+			margin: 10px 0 0;
+			font-size: 28px;
+		}
+		
+		 form > input{
+			font-size: 30px;
+			width: 70%;
+		}
+		
+		#btnSubmit{
+		  font-size: 24px;
+		}
+		
+		.label--checkbox{
+			font-size: 18px;
+			text-align: left;
+			margin: 8px;
+		}
+		
+		#menu1, #menu2, #menu3{
+			margin: 10px;
+			width: 85%;
+		}
+
+
+}
+
+			/*950*/
+@media screen and (min-width: 950px) {
+
+		header img{
+			object-fit: cover;
+		}
+
+		header #logo{
+			position: absolute;
+			top: 8%;
+			left: 5%;
+			width: 40%; 
+		}
+
+		#icone_close {
+			max-width: 6%;
+			right: 6%;
+			top: 50%;
+		}
+
+		h2{
+			margin-top: 90px;
+			font-size: 42px;
+			margin-bottom: 30px;
+		}	
+		
+		h3{
+			margin: 35px 25px 25px;
+			font-size: 38px;
+		}
+		
+		h4{
+			margin: 10px 0 0;
+			font-size: 28px;
+		}
+		
+		 form > input{
+			font-size: 30px;
+			width: 70%;
+		}
+		
+		#btnSubmit{
+		  font-size: 32px;
+		}
+		
+		.label--checkbox{
+			font-size: 18px;
+			text-align: left;
+			margin: 8px;
+		}
+		
+		#menu1, #menu2, #menu3{
+			margin: 10px;
+			width: 50%;
+}
+
+}
+
+			/*1060*/
+@media screen and (min-width: 1060px) {}
+
+			/*1200*/
+@media screen and (min-width: 1200px) {}
+
+
+.modal{
+	position: fixed;
+    width: 500px;
+    height: 200px;
+    background: #b14961;
+    top: 8%;
+    left: 36.6%;
+	z-index: 9999;
+	transition: ease-in-out 0.5s;
+
+}
+#modalTitre{
+	margin-bottom: 3%;
+	color: white;
+}
+
+#modalBouton{
+	background-color: rgb(235, 235, 235);
+    border: 3px solid #b14961;
+    border-radius: 40px;
+    color: #b14961;
+    font-family: 'funkturm';
+    padding: 16px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#modalBouton:hover {
+    background-color: #ffffff;
+    color: #b14961;
+}
+
+
+.hidden{
+	display: none;
+	top: 50% !important;
+}

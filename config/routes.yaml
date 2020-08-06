@@ -1,0 +1,39 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+index:
+    path: /
+    # the controller value has the format 'controller_class::method_name'
+    controller: App\Controller\Landing::index
+    methods: GET
+
+prestations:
+    path: /prestations
+    # the controller value has the format 'controller_class::method_name'
+    controller: App\Controller\PrestationController::getPrestation
+    methods: GET
+
+produits:
+    path: /produits
+    # the controller value has the format 'controller_class::method_name'
+    controller: App\Controller\Produits::index
+    methods: GET
+
+contact:
+    path: /contact
+    # the controller value has the format 'controller_class::method_name'
+    controller: App\Controller\Contact::index
+    methods: GET
+mentions:
+    path: /mentions
+    # the controller value has the format 'controller_class::method_name'
+    controller: App\Controller\Mentions::index
+    methods: GET
+
+dashboard:
+    path: /tableau-de-bord
+    controller: App\Controller\Dashboard::index
+    # if the action is implemented as the __invoke() method of the
+    # controller class, you can skip the '::method_name' part:
+    # controller: App\Controller\BlogController

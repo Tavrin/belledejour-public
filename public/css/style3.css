@@ -1,0 +1,538 @@
+
+@font-face {
+	font-family: "funkturm";
+	src: url("../font/Funkturm.ttf") format("truetype");
+  }
+  
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+
+body {}
+
+
+
+header {
+	background: url(../img/bg.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 236px;
+
+}
+
+
+header #logo {
+	position: absolute;
+	top: 52px;
+	left: 30%;
+	width: 400px;
+
+}
+
+h2 {
+
+	text-align: center;
+	color: #73a8a2;
+	margin-bottom: 9px;
+	padding: 35px;
+	font-family: 'funkturm';
+	font-size: 49px;
+}
+
+.tab {
+	text-align: center;
+	overflow: hidden;
+	margin-bottom: 5%;
+
+}
+
+.tab button {
+	cursor: pointer;
+	font-size: 50px;
+	transition: 0.3s;
+	text-transform: uppercase;
+	color: #B14961;
+	margin-bottom: 20px;
+	font-family: 'funkturm';
+	padding: 26px;
+
+}
+
+
+#boutonsoin {
+	border-left: solid #73a8a2;
+	border-right: solid #73a8a2;
+	border-bottom: none;
+	border-top: none;
+	background-color: white;
+}
+
+.tab button.active {
+	color: #73a8a2;
+}
+
+p {
+	float: right;
+	font-size: 45px;
+	color: #73a8a2;
+	font-family: 'Raleway-bold';
+}
+
+article {
+
+	margin-left: 90px;
+	font-family: 'Raleway';
+	display: block;
+	width: 800px;
+	font-size: 22px;
+
+}
+
+article {
+	margin-bottom: 166px;
+}
+
+ul {
+	margin-top: 30px;
+	width: 98%;
+	margin-left: 2%;
+}
+
+article li {
+	list-style: none;
+	border-bottom: 1px solid #707070;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding-bottom: 30px;
+	color: #707070;
+}
+
+.rdv a {
+	text-decoration: none;
+	font-family: 'funkturm';
+	text-align: center;
+	background-color: white;
+	border-radius: 68px;
+	padding-left: 110px;
+	padding-right: 110px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: #73a8a2;
+	border-style: solid;
+	border-width: 10px;
+	border-color: #73a8a2;
+	text-transform: uppercase;
+	font-size: 58px;
+
+}
+
+.rdv a:hover {
+	text-decoration: none;
+	font-family: 'funkturm';
+	text-align: center;
+	background-color: white;
+	border-radius: 68px;
+	padding-left: 110px;
+	padding-right: 110px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #73a8a2;
+	border-style: solid;
+	border-width: 10px;
+	border-color: #73a8a2;
+	text-transform: uppercase;
+	font-size: 58px;
+	color: white;
+	opacity: 80%;
+
+}
+
+.rdv {
+	margin-left: 15%;
+	margin-bottom: 15%;
+
+}
+
+
+footer {
+	text-decoration: none;
+
+}
+
+footer img {
+	width: 30%;
+}
+
+footer ul {
+	display: flex;
+	justify-content: center;
+}
+
+.tabcontent {
+	display: none;
+}
+
+.tabcontent .active {
+	display: block;
+}
+
+/* NAV */
+
+
+nav {
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 6px 0px 6px #00000029;
+	height: 150px;
+	position: fixed;
+	bottom: 0;
+	height: 150px;
+	width: 100%;
+}
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+	justify-content: center;
+	padding-inline-start: 0px;
+	justify-content: space-between;
+}
+
+.pictosnav {
+	width: 170%;
+	height: 170%;
+}
+
+#pictocontact {
+	position: absolute;
+	top: -45%;
+	left: 40%;
+}
+
+
+#pictopresta {
+	position: absolute;
+	left: 12%;
+	bottom: -3%;
+}
+
+#pictoproduit {
+	position: absolute;
+	left: 73%;
+	top: 17%;
+}
+
+/* FOOTER */
+
+
+footer {
+	width: 100%;
+	height: 500px;
+	padding-top: 1%;
+}
+
+footer ul {
+	margin-left: 0%;
+	margin-right: 0%;
+	width: 100%;
+}
+
+footer li {
+	width: 16.5%;
+	padding-right: 2.5%;
+	padding-left: 2.5%;
+}
+
+footer img {
+	width: 110%;
+}
+
+
+#mentions {
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'raleway';
+	color: #707070;
+	display: block;
+	text-align: center;
+	margin-top: 4%;
+	text-decoration: underline #707070;
+}
+
+#manucure-responsive {
+	display: none;
+}
+
+#navdesktop {
+	display: none;
+}
+
+#manucure-responsive,
+#soins-responsive,
+#epilation-responsive {
+	display: none;
+}
+
+/*                       ------- RESPONSIVE -------                       */
+
+@media (min-width: 1000px) {
+
+
+	header {
+		height: 100px;
+	}
+
+	header #logo {
+		top: 16px;
+		left: 3%;
+		width: 294px;
+	}
+
+
+
+	#nav {
+		display: none;
+	}
+
+	#slideroffres {
+		display: none;
+	}
+
+	#manucure-responsive {
+		display: inline-block;
+		float: left;
+		width: 40%;
+	}
+
+	article {
+		margin-left: 6%;
+		margin-bottom: 30px;
+	}
+
+	li {
+		font-size: 20px;
+	}
+
+	article li {
+		border-bottom: 0;
+		margin-bottom: 0;
+		margin-top: 0px;
+		padding-bottom: 15px;
+	}
+
+	p {
+		font-size: 20px;
+	}
+
+	h1 {
+		margin-left: 2%;
+		text-transform: uppercase;
+		font-family: 'funkturm';
+		color: #B14961;
+		font-size: 35px;
+	}
+
+	#soins-responsive {
+		display: inline-block;
+		width: 40%;
+	}
+
+	#epilation-responsive {
+		width: 40%;
+	}
+
+
+	.rdv {
+		display: block;
+	}
+
+
+	.rdv a {
+		text-decoration: none;
+		font-family: 'funkturm';
+		text-align: center;
+		background-color: white;
+		border-radius: 67px;
+		padding-left: 67px;
+		padding-right: 67px;
+		padding-top: 28px;
+		padding-bottom: 28px;
+		color: #73a8a2;
+		border-style: solid;
+		border-width: 7px;
+		border-color: #73a8a2;
+		text-transform: uppercase;
+		font-size: 35px;
+
+	}
+
+	.rdv a:hover {
+		text-decoration: none;
+		font-family: 'funkturm';
+		text-align: center;
+		background-color: #73a8a2;
+		border-radius: 67px;
+		padding-left: 67px;
+		padding-right: 67px;
+		padding-top: 28px;
+		padding-bottom: 28px;
+		color: #73a8a2;
+		border-style: solid;
+		border-width: 7px;
+		border-color: #73a8a2;
+		text-transform: uppercase;
+		font-size: 35px;
+		color: white;
+		opacity: 80%;
+
+	}
+
+	.rdv {
+		margin-left: 34%;
+		margin-bottom: 2%;
+		margin-top: 3%;
+
+	}
+
+
+
+	#manucure-responsive,
+	#soins-responsive,
+	#epilation-responsive {
+		width: 27%;
+		padding-top: 6%;
+	}
+
+	#soins-responsive {
+		float: left;
+	}
+
+	#epilation-responsive {
+		display: inline-block;
+	}
+
+	article li {
+		font-size: 15px;
+	}
+
+	article {
+		margin-left: 4.5%;
+	}
+
+	h2 {
+		display: none;
+	}
+
+	#navdesktop {
+		display: block;
+		text-align: center;
+		margin-top: 2%;
+	}
+
+	.corps-texte {
+		font-size: 20px !important;
+		line-height: 1.8rem !important;
+		width: 60% !important;
+	}
+
+
+
+	#navdesktop {
+		display: block;
+		text-align: center;
+	}
+
+	.navdesk {
+		padding: 0;
+	}
+
+	.navdesk {
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		margin-top: 1%;
+	}
+
+	.navdesk li {
+		display: list-item;
+		width: 13%;
+		height: 100%;
+		padding-bottom: 21% !important;
+		position: relative;
+		list-style-type: none;
+		padding: 11px !important;
+		margin: 1% 2%;
+		background: #F7E6E1;
+	}
+
+
+	.navdesk a {
+		position: absolute;
+		top: -11px;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		font-family: 'funkturm';
+		color: #73A8A2;
+		font-size: 24px;
+		margin-top: 2%;
+		text-decoration: none;
+	}
+
+	footer img {
+		width: 91%;
+		margin: 16px;
+		margin-left: 66%;
+
+
+	}
+
+
+	footer img:hover {
+		width: 91%;
+		margin: 16px;
+		margin-left: 66%;
+		opacity: 0.5;
+
+	}
+
+
+	#titreavis {
+		margin-bottom: 2%;
+	}
+
+	footer {
+		width: 100%;
+		height: 20%;
+		margin-bottom: 0;
+	}
+
+
+	#mentions {
+		margin-top: 0;
+		justify-content: center;
+		display: flex;
+		font-size: 16px;
+		margin-bottom: 2%;
+	}
+
+	footer ul {
+		display: flex;
+		justify-content: center;
+		width: 34%;
+		margin-left: 31%;
+	}
+
+
+
+
+
+	#avis h2 {
+		margin-top: 23%;
+	}
+
+
+
+}

@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tableau de bord{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" href="css/dashboard.css">
+{% endblock %}
+{% block body %}
+{% if is_granted('IS_AUTHENTICATED_FULLY') %}
+<h1>Bienvenue {{ app.user.username }}</h1>
+<img src="img/logo.png">
+<br>
+{% endif %}
+<a href="/logout">Déconnexion</a>
+ <div class="prestations">
+     <div class="boutons-prestations">
+     <button class="bouton-categorie active" id="bouton-manu" data-id="1">Manucure</button>
+     <button class="bouton-categorie" id="bouton-soins" data-id="2">Soins</button>
+     <button class="bouton-categorie" id="bouton-epil" data-id="3">Epilation</button>
+    </div>
+    <div class="tables-prestations">
+        <ul id="liste-prestas">
+                {% for key, categorie in prestations %}
+                {% if key == "Manucure" %}
+                {% for prestation in categorie %}
+                   <li class="prestation-row"><a class="prestation-texte" href="/tableau-de-bord/prestations/edit/{{prestation.id}}">{{prestation.name}} - {{prestation.price}}€ </a> <button class="bouton-delete" data-id="{{prestation.id}}">Supprimer</button></li><hr>
+                {% endfor %}
+                {% endif %}
+            {% endfor %}
+        
+        </ul>
+    </div>
+    <div class="ajout-prestation">
+        <form action="" id="ajoutPrestation">
+            <input type="text" name="name" id="prestationName" placeholder="Nom de la prestation">
+            <input type="text" name="price" id="prestationPrice" placeholder="Prix de la prestation">
+            <input type="hidden" name="categorie" id="prestationCategorie">
+            <button type="submit" id="bouton-ajout" data-id="1">Ajouter</button>
+        </form>
+    </div>
+ </div>
+
+
+
+{% endblock %}
+{% block javascripts %}
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/dashboard.js"></script>
+{% endblock %}

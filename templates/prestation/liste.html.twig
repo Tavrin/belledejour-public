@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Rajouter une prestation{% endblock %}
+{% block stylesheets %}
+{% endblock %}
+{% block body %}
+<script type="text/javascript" src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
+    {% for key, categorie in prestations %}
+        <li> {{key}}</li>
+        {% for prestation in categorie %}
+           <div class="prestation">{{prestation.name}} - {{prestation.price}}€ <button data-id="{{prestation.id}}">delete</button></div><br>
+        {% endfor %}
+    {% endfor %}
+
+<script>
+        $('button').on('click', function(e) {
+            var id = $(this).attr('data-id')
+            var parent = $(this).parent()
+            console.log(id)
+            $.ajax({
+                url:'{{ (path("listeDelete")) }}',
+                type: "POST",
+                dataType: "json",
+                data: {
+                    'id': id
+                },
+                async: true,
+                success: function(data) {
+                    parent.remove();
+                    alert("test");
+
+                }
+            });
+
+        })
+       
+
+</script>
+{% endblock %}

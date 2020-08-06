@@ -1,0 +1,327 @@
+#offres2 {
+  display: none;
+}
+
+#imgmanu {
+  background: unset;
+  background-position: top left;
+  position: unset;
+  top: 40%;
+  width: 43%;
+  height: 100%;
+  left: 57%;
+}
+
+#imgepil {
+  background: unset;
+  background-position: top left;
+  top: 66%;
+  width: 100%;
+  height: 244%;
+  left: unset;
+}
+
+footer ul {
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+
+@media (min-width: 1100px) {
+  #produits {
+
+    display: none;
+  }
+
+  #offres {
+    display: none;
+  }
+
+  #offres2 {
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    margin-bottom: 1%;
+    margin-top: 4%;
+  }
+
+
+  #nav {
+    display: none;
+  }
+
+  #borderoffres {
+    display: none;
+  }
+
+  #borderpropos {
+    display: none;
+  }
+
+  #apropos {
+    display: flex;
+  }
+
+  #titreapropos {
+    text-align: center;
+    display: initial;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 auto;
+  }
+
+  #oceane {
+    width: 21%;
+    height: 24%;
+    margin-left: 5%;
+    margin-top: 6%;
+  }
+
+
+  #profil {
+    display: block;
+    margin-left: 4.5%;
+    font-size: 30px;
+    text-align: left;
+  }
+
+  /* #bio{
+        font-size: 1.375rem;
+        line-height: 2.3rem;
+        width: 60%;
+    }
+       */
+
+  #bio,
+  #bonjour,
+  #aurevoir {
+    text-align: left;
+    font-size: 19px;
+  }
+
+  #divavron {
+    margin-left: 2%;
+  }
+
+  #divavron p {
+    text-align: left;
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.5rem;
+    width: 100%;
+  }
+
+  #coordonnes {
+    display: flex;
+  }
+
+  #aurevoir {
+    margin-bottom: 2%;
+  }
+
+  #pictolocal {
+    margin-left: 4%;
+    width: 4%;
+    margin-right: 0;
+  }
+
+  #navdesktop {
+    display: block;
+    text-align: center;
+  }
+
+  .navdesk {
+    padding: 0;
+  }
+
+  .navdesk {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+  }
+
+  .navdesk li {
+    display: list-item;
+    width: 9%;
+    height: 100%;
+    padding-bottom: 21% !important;
+    position: relative;
+    list-style-type: none;
+    padding: 11px !important;
+    margin: 1% 2%;
+    background: #F7E6E1;
+  }
+
+
+  .navdesk a {
+    position: absolute;
+    top: -11px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'funkturm';
+    color: #73A8A2;
+    font-size: 24px;
+    margin-top: 2%;
+  }
+
+  #headerBackground {
+    max-height: 102px;
+
+  }
+
+  header {
+    max-height: 102px;
+    min-width: 100%;
+  }
+
+  header #logo {
+    top: -88px;
+    width: 17%;
+    left: 28px;
+  }
+
+  header p {
+    display: none;
+  }
+
+  #imgsoins2,
+  #imgmanu2,
+  #imgepil2 {
+    width: 70%;
+    transform: rotate(-90deg);
+
+  }
+
+  #imgmanu2 {
+    margin-left: 11%;
+  }
+
+  #imgsoins2 {
+    transform: rotate(-210deg);
+    margin-bottom: -47%;
+  }
+
+  #imgepil2 {
+    transform: rotate(30deg);
+    margin-bottom: -47%;
+  }
+
+  .prestations2 {
+    justify-content: space-around;
+    max-width: 22vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7%;
+    align-items: center;
+    margin-left: 2%;
+  }
+
+  .zoneTextePrestation2 {
+    margin-top: 12%;
+    width: 60%;
+    margin-bottom: 10%;
+  }
+
+  .texteprestation {
+    margin-right: 0 !important;
+    line-height: 1.5rem;
+  }
+
+  /* #manudots{
+        text-align: left;
+          font-size: 83px;
+          color: #73A8A2;
+          letter-spacing: -9px;
+          line-height: 38px;
+      } */
+  .dots {
+    position: inherit;
+    text-align: left;
+    font-size: 60px;
+    color: #73A8A2;
+    letter-spacing: -6px;
+    line-height: 38px;
+  }
+
+  #offres2 p {
+    font-size: 20px;
+  }
+
+  #soins h3 {
+    width: 90%;
+    text-align: right;
+    margin-bottom: 6%;
+  }
+
+  #offres2 h3 {
+    margin-bottom: 11%;
+    color: #B14961;
+    font-family: 'funkturm';
+    font-size: 30px;
+    margin-left: -22%;
+  }
+
+  footer img {
+    /* width: 91%; */
+    /* margin: 16px; */
+    /* margin-left: 66%; */
+  }
+
+  #titreavis {
+    margin-bottom: 2%;
+  }
+
+  footer {
+    /* width: 100%; */
+    /* height: 20%; */
+    /* margin-bottom: 0; */
+  }
+
+
+  #mentions {
+    margin-top: 0;
+    justify-content: center;
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 2%;
+  }
+
+  footer ul {
+    display: flex;
+    justify-content: center;
+    width: 34%;
+  }
+
+  article p {
+    width: 161%;
+
+
+  }
+
+  #textemanu {
+    margin-left: -22%;
+  }
+
+  #soins p {
+    width: 117%;
+    margin-left: 23%;
+  }
+
+  #soins h3 {
+    margin-left: 49%;
+  }
+
+  #epilation a {
+    margin-left: 91%;
+  }
+
+  #epilation h3 {
+    margin-left: 11%;
+  }
+
+  #soins a {
+    margin-left: 117%;
+  }
+
+}

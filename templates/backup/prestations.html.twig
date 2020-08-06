@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style3.css">
+	<link rel="stylesheet" href="css/prestations.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<title>Belles de Jour</title>
+</head>
+<body>
+	<header id="headersmall">
+		<a href="index.html"><img id="logo" src="img/logo.png"></a>
+	</header>
+	<section>
+		<h2>Offres</h2>
+		<section id="slideroffres">
+
+			<div class="tab">
+				<button class="tablinks active" onclick="Offres(event, 'manucure')">manucure</button>
+				<button id="boutonsoin" class="tablinks" onclick="Offres(event, 'soins')">soins</button>
+				<button class="tablinks" onclick="Offres(event, 'epilation')">epilation</button>
+
+
+			</div>
+
+			<!-- <article id="manucure" class="tabcontent"> -->
+
+				<!-- <ul class=colonne1>
+					<li>Beauté des mains <p>25€</p></li>
+					<li>Beauté des mains avec pose de semi-permanent<p>42€</p></li>
+					<li>Beauté des pieds<p>30€</p></li>
+					<li>Beauté des pieds avec pose de semi-permanent<p>45€</p></li>
+					<li>Pose de vernis semi-permanent<p>25€</p></li>
+					<li>Pose de vernis semi-permanent mains et pieds<p>40€</p></li>
+					<li>Pose de gel sur ongles naturels<p>40€</p></li>
+					<li>Pose de gel avec chablon<p>45€</p></li>
+				</ul>
+			</article> -->
+
+			<!-- <article id="soins" class="tabcontent"> -->
+				
+				<!-- <ul> -->
+						{% for key, categorie in prestations %}
+							 {% if key == 'Manucure' %}
+								<article id="manucure" class="tabcontent">
+								<ul class=colonne1>
+								{% for prestation in categorie %}
+									<li>{{prestation.name}} <p>{{prestation.price}}</p></li>
+								{% endfor %}
+								</ul>
+								</article>
+								{% endif %}
+							{% if key == 'Soins' %}
+							<article id="soins" class="tabcontent">
+									<ul class=colonne1>
+									{% for prestation in categorie %}
+										<li>{{prestation.name}} <p>{{prestation.price}}</p></li>
+									{% endfor %}
+								</ul>
+								</article>
+								{% endif %}
+							{% if key == 'Epilation' %}
+								<article id="epilation" class="tabcontent">
+								<ul class=colonne1>
+								{% for prestation in categorie %}
+									<li>{{prestation.name}} <p>{{prestation.price}}</p></li>
+									{% endfor %}
+									</ul>
+								</article>
+								{% endif %}
+						{% endfor %}
+					<!-- <li>Modelage visage (30 min)<p>15€</p></li>
+					<li>Modelage dos (30min)<p>20€</p></li>
+					<li>Modelage corps (30 min)<p>30€</p></li>
+					<li>Modelage corps (1h)<p>40€</p></li>
+					<li>Modelage relaxant corps (1h)<p>45€</p></li>
+					<li>Soin visage anti-âge (1h)<p>35€</p></li>
+					<li>Soin visage purifiant (1h)<p>35€</p></li>
+					<li>Soin visage apaisant (1h)<p>35€</p></li>
+					<li>Soin jambes lourdes (45min)<p>40€</p></li> -->
+				<!-- </ul> -->
+
+			</article>
+			<!-- <article id="epilation" class="tabcontent">
+				<ul>
+					<li>1/2 jambes<p>12€</p></li>
+					<li>Jambes entières<p>20€</p></li>
+					<li>Aiselles<p>9€</p></li>
+					<li>Maillot simple<p>9€</p></li>
+					<li>Maillot échancré<p>12€</p></li>
+					<li>Maillot intégral<p>20€</p></li>
+					<li>Sourcils, lèvres ou menton<p>7€</p></li>
+					<li>Demi Bras<p>9€</p></li>
+					<li>Bras<p>12€</p></li>
+					
+				</ul>
+
+			</article> -->
+	    </section>	
+	</section>
+
+	<section class="rdv">
+		<a href="#">Je prends RDV</a>
+    </section>
+
+	<section>
+		<h2>Qu'en disent-ils ?</h2>
+	</section>
+	<hr>
+	<footer>
+			<ul class="socials">
+						<li>
+							<a href="https://www.instagram.com/bellesdejour_/?hl=fr" target="_blank"><img src="img/instagram.svg"></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/twitter.svg"></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/facebook.svg"></a>
+						</li>
+			</ul>
+			<a href="">Mentions Legales</a>
+	</footer>
+
+	<script>
+
+window.onload = function(manucureload) {
+  manucure.style.display='block';
+};
+
+function Offres(evt, offresName) {
+  var i, tabcontent, tablinks;
+  i = i++
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active");
+  }
+
+
+  document.getElementById(offresName).style.display = "block";
+  evt.currentTarget.classList.add("active");
+}
+
+
+</script>
+
+</body>
+</html>

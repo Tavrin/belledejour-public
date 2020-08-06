@@ -1,0 +1,9 @@
+.tab button{
+    border-bottom: none;
+    border-top: none;
+    background-color: white;
+}
+
+header{
+    margin-top: -12px;
+}

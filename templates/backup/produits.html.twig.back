@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/produits.css">
+    <link rel="stylesheet" href="css/modifproduits.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<title>Belles de Jour</title>
+</head>
+<body>
+        {{ include('partials/nav.html.twig') }}
+                
+
+	<section id="produits">
+		<h2>Avec quels produits ?</h2>
+		<div id="descriptionprod">Découvez tout les produits que j'utilise pour prendre soin de vous. <br>N'hésitez pas a me faire part de vos préferences une fois au salon !</div>
+		
+
+<div class="slider-container">
+            <img src="img/produits/GelPolishIBD.png" alt="Gel Polish IDB" srcset="" class="images image-cachee" data-target="1">
+            <img src="img/produits/NaturalStyle.png" alt="Peggy Sage Natural Style Protective Coat" srcset="" class="images image-cachee"  data-target="2">
+            <img src="img/produits/PeggySageMassage.png" alt="Peggy Sage Massage Oil" srcset="" class="images image-secondaire image-gauche " data-target="3">
+            <img src="img/produits/PEggySageDemaq.png" alt="Peggy Sage Demaquillant" srcset="" class="images image-principale"  data-target="4">
+            <img src="img/produits/PeggySageIlak.png" alt="¨Peggy Sage I LAK" srcset="" class="images image-secondaire image-droite"  data-target="5">
+            <img src="img/produits/PeggySageNailPrep.png" alt="Peggy Nail NAil Prep Sculpting" srcset="" class="images image-cachee"  data-target="6">
+            <img src="img/produits/PeggySageStamping.png" alt="ëggy Sage Stamping" srcset="" class="images image-cachee"  data-target="7">
+            <img src="img/produits/PSCremeNutri.png" alt="Peggy Sage Creme Haute Nutrition" srcset="" class="images image-cachee"  data-target="8">
+            <img src="img/produits/RitualOfnamaste.png" alt="Ritual Of Namaste Cream" srcset="" class="images image-cachee"  data-target="9">
+
+        <div class="zone-texte" id="texte1">
+                <h3 class="titre-texte">Vernis gel IDB</h3>
+                <p class="corps-texte">Une tenue sans faille et des couleurs eclatantes durant plusieurs jours (14 jours à 3 semaines sur les mains et jusqu'à 6 semaines au niveau des pieds).</p>
+            </div>
+
+        <div class="zone-texte" id="texte2">
+                    <h3 class="titre-texte">Top Coat Peggy Sage</h3>
+                    <p class="corps-texte">Un top coat pour accentuer la brillance et la couvrance de vos ongles, tout en ameliorant la tenue du vernis.</p>
+                </div>
+
+        <div class="zone-texte" id="texte3">
+                <h3 class="titre-texte">Huile de massage Peggy Sage</h3>
+                <p class="corps-texte"> Non gras et enrichi d'huile essentielle d'oranger pure, ce soin permet de longs massages en continu, décontracte, apaise le stress et défatigue le corps.</p>
+            </div>
+
+        <div class="zone-texte" id="texte4">
+                <h3 class="titre-texte">Lotion démaquillante Peggy Sage</h3>
+                <p class="corps-texte">Une formule très douce enrichie en eau de bleuet, garantie sans parfum ni alcool. Pour un démaquillage parfait des cils et paupières et supprime toute trace d'impureté et de maquillage.</p>
+            </div>
+
+        <div class="zone-texte" id="texte5">
+                <h3 class="titre-texte">Vernis semi-permanent Peggy Sage</h3>
+                <p class="corps-texte">
+                Des vernis semis-permanents qui garantissent un résultat de qualité. Du brillant au mat, en passant par les paillettes, des ongles eclatants et longue durée.</p>
+            </div>
+
+        <div class="zone-texte" id="texte6">
+                <h3 class="titre-texte">Prep Sculpting Peggy Sage</h3>
+                <p class="corps-texte">Purifie et dégraisse l'ongle naturel, s'applique comme une vernis avant l'application de résine acrylique, capsules et gel UV.</p>
+            </div>
+            <div class="zone-texte" id="texte7">
+                    <h3 class="titre-texte">Vernis Stamping Peggy Sage</h3>
+                    <p class="corps-texte">Un vernis coloré à texture couvrante spéciale stamping, pour des créations Nail Art.</p>
+                </div>
+            <div class="zone-texte" id="texte8">
+                <h3 class="titre-texte">Crème visage Peggy Sage</h3>
+                <p class="corps-texte">La crème de jour haute nutrition est confortable et riche, elle protège, hydrate et répare les épidermes fragilisés grace aux huiles naturelles de Karité, Inca Inchi,et Macadamia.</p>
+            </div>
+            <div class="zone-texte" id="texte9">
+                <h3 class="titre-texte">The Ritual of Namaste</h3>
+                <p class="corps-texte">Crème gel hydratante enrichie en acide hyalurinique et rose indienne, elle procure une hydratation intense de la peau et une protection contre les effets négatifs de la pollution urbaine.</p>
+
+            </div>
+        </div>
+        
+        <script src="js/main.js" async defer></script>
+
+		<section id="avis">
+		<h2>Qu'en disent-ils ?</h2>
+	</section>
+	<footer>
+			<ul class="socials">
+						<li>
+							<a href="#"><img src="">Insta</a>
+						</li>
+						<li>
+							<a href="#"><img src="">Twitter</a>
+						</li>
+						<li>
+							<a href="#"><img src="">Facebook</a>
+						</li>
+			</ul>
+			<a href="">Mentions Legales</a>
+	</footer>
+</body>
+</html>

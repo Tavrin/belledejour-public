@@ -1,0 +1,118 @@
+.prestations{
+    width: 30%;
+    margin: 5% auto;
+}
+
+.active{
+    background-color: rgb(54, 141, 46);
+    color: white;
+}
+
+
+
+ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+hr{
+    border-color: rgb(255, 255, 255);
+}
+.bouton-delete{
+    border: none;
+    color: white;
+    background-color: #f44336;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+@font-face {
+    font-family: "funkturm";
+    src: url("../font/Funkturm.ttf") format("truetype");
+  }
+  
+  *{
+      font-family: 'Raleway';
+      list-style: none;
+  }
+  
+  .prestations{
+      width: 20%;
+      margin: 5% auto;
+  }
+  
+  .active{
+      background-color: #B14961;
+      color: white;
+  }
+  
+  h1{
+      text-align: center;
+      font-family: 'funkturm';
+      color: #73A8A2;
+      font-size: 40px;
+  }
+  
+  img{
+      align-self: center;
+      width: 16%;
+      margin-left: 40%;
+      margin-top: -1%;
+      margin-bottom: 2%; 
+  }
+  
+  a{
+  
+      margin-left: 36%;   
+      text-decoration: none;
+      border: solid 1px;
+      border-color: #B14961;
+      border-radius: 1%;
+      padding: 6px;
+      font-size: 20px;
+      background-color: #B14961;
+      color: white;
+      font-family: 'Raleway';
+  }
+  
+  .prestation-texte{
+      border: none;
+      padding: initial;
+      font-size: initial;
+      background: none;
+      color: black;
+      margin: initial;
+  }
+
+  .prestation-texte:hover{
+    color: rgb(160, 52, 52);
+}
+  button {
+      background-color: #d6d6d6;
+      padding: 2px;
+      font-size: 24px;
+  } 
+  
+  .prestations{
+      border: solid 2px;
+      border-color: #B14961;
+      padding: 10px;
+      margin-right: 41%;
+      box-shadow: 12px 12px 2px 1px #73A8A2;
+  }
+  
+  #bouton-manu, #bouton-soins, #bouton-epil{
+      font-size: 17px;
+  }
+  
+  #bouton-manu{
+      margin-left: 4%;
+  }
+  
+  #bouton-ajout {
+      margin-left: 40%;
+      margin-top: 3%;
+  }
+  

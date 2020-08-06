@@ -1,0 +1,1090 @@
+/*MOBILE FIRST 320*/
+
+
+@font-face {
+  font-family: "funkturm";
+  src: url("../font/Funkturm.ttf") format("truetype");
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  /* text-decoration: none; */
+}
+
+body {
+
+  position: relative;
+
+}
+
+#navdesktop {
+  display: none;
+}
+
+.rdv {
+  display: none;
+}
+
+header {
+  height: 525px;
+}
+
+header img {
+  /*background: url(../img/bg.jpg) no-repeat;*/
+  top: 0px;
+  left: 0px;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+
+}
+
+header #logo {
+  position: relative;
+  top: -400px;
+  width: 60%;
+  left: 199px;
+
+}
+
+header p {
+  position: relative;
+  width: 65%;
+  height: auto;
+  top: -316px;
+  left: 20%;
+  font-family: 'Raleway-bold';
+  font-style: italic;
+  color: white;
+  font-size: 45px;
+  text-align: left;
+
+}
+
+
+section h2 {
+  color: #707070;
+  text-align: center;
+  padding: 20px;
+  font-family: 'funkturm';
+  color: #73A8A2;
+  font-size: 70px;
+}
+
+
+#titreoffre {
+  top: -56%;
+}
+
+#offres h3 {
+  color: #B14961;
+  font-family: 'funkturm';
+  font-size: 60px;
+}
+
+article p {
+  font-family: 'Raleway';
+  color: #707070;
+  font-size: 12px;
+}
+
+.dots {
+  font-size: 165px;
+  color: #73A8A2;
+  letter-spacing: -14px;
+  line-height: 38px;
+  position: absolute;
+  left: 84%;
+}
+
+#textemanu p {
+  font-size: 42px;
+}
+
+/* PRODUITS */
+
+#borderproduit {
+  background: #F7E6E1;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  position: relative;
+  justify-content: center;
+
+}
+
+h4 {
+  font-family: 'funkturm';
+  color: #73A8A2;
+  font-size: 70px;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+#produits p {
+  font-family: 'funkturm';
+  color: #73A8A2;
+  font-size: 70px;
+}
+
+#soins {
+  margin-bottom: 7%;
+}
+
+#offres {
+  position: relative;
+}
+
+#textesoin {
+  margin-top: -5%;
+  margin-right: 11%;
+
+}
+
+#soins p {
+  text-align: right;
+  margin-right: 10%;
+  font-size: 42px;
+  width: 104%;
+}
+
+
+#imgsoins {
+  padding-top: 3%;
+}
+
+#soins h3 {
+  width: 90%;
+  text-align: right;
+  margin-bottom: 6%;
+}
+
+
+
+#imgmanu {
+  background: url(../img/manu.png) no-repeat;
+  background-position: top left;
+  top: 40%;
+  left: 57%;
+
+}
+
+#soins .dots a {
+  text-align: right;
+}
+
+#manucure h3 {
+  font-size: 60px;
+  margin-left: 12%;
+  margin-bottom: 2%;
+}
+
+.zoneTextePrestation {
+  width: 100%;
+}
+
+#textemanu {
+  margin-left: 11%;
+}
+
+#manudots {
+
+  text-align: left;
+  font-size: 165px;
+  color: #73A8A2;
+  letter-spacing: -14px;
+  line-height: 38px;
+}
+
+#manucure {
+  margin-bottom: 7%;
+}
+
+#imgepil {
+  background-position: top left;
+  top: 66%;
+  width: 100%;
+  height: 244%;
+  left: -22%;
+}
+
+#epilation h3 {
+  width: 90%;
+  text-align: right;
+  margin-bottom: 2%;
+}
+
+
+#epilation p {
+  text-align: right;
+  margin-right: 11%;
+  font-size: 42px;
+}
+
+#epilation {
+  margin-bottom: 7%;
+}
+
+#borderoffres {
+  background: #F7E6E1;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  position: relative;
+
+}
+
+/* A PROPOS }*/
+
+#oceane {
+  width: 30%;
+  border-radius: 100%;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+  ;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+
+}
+
+#borderpropos {
+  background: #F7E6E1;
+  width: 38%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  position: relative;
+  justify-content: center;
+}
+
+#titreapropos {
+  position: absolute;
+  top: -60.1%;
+  left: 6%;
+  min-width: 100%;
+}
+
+#profil {
+  text-align: center;
+  margin-top: 5%;
+  color: #B14961;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 35px;
+}
+
+#bonjour {
+  font-family: 'Raleway';
+  text-align: center;
+  color: #707070;
+  margin-top: 4%;
+  font-size: 15px;
+  width: 90%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 70%;
+}
+
+#bio {
+  font-family: 'Raleway';
+  text-align: center;
+  color: #707070;
+  margin-top: 1%;
+  font-size: 15px;
+  width: 90%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#aurevoir {
+  font-family: 'Raleway';
+  text-align: center;
+  color: #707070;
+  margin-top: 2%;
+  font-size: 15px;
+  width: 90%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10%;
+}
+
+#pictolocal {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+
+#avron,
+#tel {
+  font-family: 'Raleway';
+  font-weight: 700;
+  text-align: center;
+  margin-top: 2%;
+  color: #B14961;
+  font-size: 35px;
+}
+
+#adresse {
+  font-family: 'Raleway';
+  text-align: center;
+  color: #707070;
+  margin-top: 3%;
+  font-size: 15px;
+  width: 90%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/* AVIS */
+
+#titreavis {
+  margin-top: 10%;
+}
+
+/*SLIDER*/
+.slider-container {
+  position: relative;
+  width: 100%;
+  display: block;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
+.image-principale {
+  top: 25%;
+}
+
+.images {
+  position: absolute;
+  margin: auto;
+  transition: ease-in-out 0.5s;
+  left: 0;
+  right: 0;
+  max-width: 25em;
+
+}
+
+.image-cachee {
+  opacity: 0;
+  visibility: hidden;
+  max-width: 0px;
+  max-height: 0px;
+  transition: ease-in-out 0.5s;
+}
+
+.image-secondaire {
+  top: 25%;
+
+  max-width: 15em;
+  opacity: 0.5;
+}
+
+.image-gauche {
+  left: -500px;
+
+}
+
+.image-droite {
+  left: 500px;
+
+}
+
+.image-secondaire:hover {
+  cursor: pointer;
+}
+
+/* .slider-container{
+    position: relative;
+} */
+
+.zone-texte {
+  position: absolute;
+  top: 105%;
+  width: 93%;
+  left: 3%;
+  text-align: center;
+
+}
+
+#produits p {
+  font-family: 'Raleway';
+  color: #707070;
+  font-size: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+#produits h3 {
+  font-family: 'Raleway';
+  font-weight: 700;
+  color: #B14961;
+  font-size: 45px;
+  line-height: 0px;
+  margin-top: 20px;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  font-weight: normal;
+
+}
+
+#produits {
+  height: 800px;
+  margin-top: 2vh;
+  margin-bottom: 8%;
+}
+
+
+
+#nav {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 6px 0px 6px #00000029;
+  height: 150px;
+  position: fixed;
+  bottom: 0;
+  height: 150px;
+  width: 100%;
+}
+
+
+.chat:active {
+  animation: move-top 0.5s linear normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move-top {
+  0% {
+    bottom: 0px;
+  }
+
+  100% {
+    bottom: 1100px;
+  }
+}
+
+
+#nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding-inline-start: 0px;
+  justify-content: space-between;
+}
+
+.pictosnav {
+  width: 170%;
+  height: 170%;
+}
+
+#pictocontact {
+  position: absolute;
+  top: -45%;
+  left: 40%;
+  height: 129px;
+}
+
+#pictopresta {
+  position: absolute;
+  left: 12%;
+  height: 200px;
+  bottom: 27px;
+}
+
+#pictoproduit {
+  position: absolute;
+  left: 73%;
+  top: -63%;
+  height: 200px;
+}
+
+
+.icon {
+  top: -45%;
+  top: 17%;
+}
+
+/* FOOTER */
+
+footer {
+  /* width: 100%; */
+  /* height: 500px; */
+}
+
+footer ul {
+  /* margin-left: 27%; */
+  /* margin-right: 27%; */
+  /* display: flex; */
+}
+
+footer li {
+  /* width: 25%; */
+}
+
+footer img {
+  /* width: 132%; */
+  /* padding: 21%; */
+  /* margin: 19%; */
+}
+
+#mentions {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'raleway';
+  color: #707070;
+  display: block;
+  text-align: center;
+  margin-top: 4%;
+  text-decoration: underline #707070;
+}
+
+.prestations {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+#titreproduit {
+  top: -58%;
+  left: 3.5%;
+  min-width: 100%;
+}
+
+/* RESPONSIVE */
+
+/*FORMATS INTERMEDIAIRES 1000 - 1300 px*/
+
+@media (min-width: 1100px) {
+
+  #headerBackground {
+    max-height: 203px;
+    object-fit: cover;
+    min-width: 100%;
+  }
+
+  @media (min-width: 1100px) {
+
+    #headerBackground {
+      max-height: 203px;
+      object-fit: cover;
+      min-width: 100%;
+    }
+
+    header {
+      max-height: 200px;
+      min-width: 100%;
+    }
+
+    header #logo {
+      top: -190px;
+      width: 32%;
+      left: 18px;
+    }
+
+    header p {
+      width: 76%;
+      top: -181px;
+      left: 19%;
+      font-size: 30px;
+    }
+
+    #borderoffres {
+      margin-top: 8%;
+
+    }
+
+
+    #soins h3 {
+      font-size: 49px;
+      top: 11%;
+    }
+
+    #soins p {
+      font-size: 20px;
+    }
+
+    #manucure h3 {
+      font-size: 49px;
+      top: 41%;
+    }
+
+    #textemanu p {
+      font-size: 20px;
+    }
+
+    #epilation h3 {
+      font-size: 49px;
+      top: 1223px;
+    }
+
+    #epilation p {
+      font-size: 20px;
+      margin-left: -49%;
+    }
+
+    #produits p {
+      font-size: 34px;
+    }
+
+    #imgsoins {
+      width: 60%;
+      /* transform: rotate(30deg); */
+    }
+
+    .prestations {
+      justify-content: space-around;
+      max-width: 20vw;
+      flex-direction: column;
+    }
+
+    .zoneTextePrestation {
+      margin-top: 12%;
+      width: 60%;
+      margin-bottom: 10%;
+    }
+
+    #manudots {
+      text-align: left;
+      font-size: 83px;
+      color: #73A8A2;
+      letter-spacing: -9px;
+      line-height: 38px;
+    }
+
+    .dots {
+      position: inherit;
+      text-align: left;
+      font-size: 83px;
+      color: #73A8A2;
+      letter-spacing: -9px;
+      line-height: 38px;
+    }
+
+    #offres {
+      justify-content: center;
+      flex-direction: row;
+      display: flex;
+    }
+
+    #soins h3 {
+      text-align: left;
+    }
+
+    #imgmanu {
+      display: none;
+    }
+
+    #imgepil {
+      display: none;
+    }
+
+    #bonjour {
+      font-size: 27px;
+    }
+
+    #aurevoir {
+      font-size: 27px;
+    }
+
+    #bio {
+      font-size: 26px;
+    }
+
+    #adresse {
+      font-size: 30px;
+    }
+
+    .pictosnav {
+      width: 110%;
+    }
+
+    #nav {
+      height: 100px;
+    }
+
+
+    h4 {
+      left: 14%;
+    }
+
+    #titreproduit {
+      left: 8.5%;
+    }
+
+    #titreapropos {
+      left: 12%;
+    }
+
+    #epilation h3 {
+      top: 1256px;
+    }
+
+
+
+
+    /*FORMATS DESK 1300px ET +*/
+
+
+    #nav {
+      display: none;
+    }
+
+    #borderoffres {
+      display: none;
+    }
+
+    h4 {
+      display: none;
+    }
+
+    #navdesktop {
+      display: block;
+      text-align: center;
+    }
+
+    .navdesk {
+      padding: 0;
+    }
+
+    .navdesk {
+      list-style: none;
+    }
+
+    .navdesk li {
+      display: inline-block;
+      list-style-type: none;
+      padding: 25px;
+    }
+
+
+    .navdesk a {
+      text-align: center;
+      font-family: 'funkturm';
+      color: #73A8A2;
+      font-size: 28px;
+    }
+
+    #headerBackground {
+      max-height: 102px;
+
+    }
+
+    header {
+      max-height: 102px;
+      min-width: 100%;
+    }
+
+    header #logo {
+      top: -88px;
+      width: 17%;
+      left: 28px;
+    }
+
+    header p {
+      display: none;
+    }
+
+    #imgsoins,
+    #deskepil {
+      width: 60%;
+      transform: rotate(30deg);
+    }
+
+    #deskmanu {
+      width: 60%;
+      transform: rotate(-90deg);
+
+    }
+
+    #deskmanu {
+      width: 60%;
+    }
+
+    .prestations {
+      justify-content: space-around;
+      max-width: 20vw;
+    }
+
+    .zoneTextePrestation {
+      margin-top: 12%;
+      width: 60%;
+      margin-bottom: 10%;
+    }
+
+    #manudots {
+      text-align: left;
+      font-size: 83px;
+      color: #73A8A2;
+      letter-spacing: -9px;
+      line-height: 38px;
+    }
+
+    .dots {
+      position: inherit;
+      text-align: left;
+      font-size: 83px;
+      color: #73A8A2;
+      letter-spacing: -9px;
+      line-height: 38px;
+    }
+
+    #offres {
+      justify-content: center;
+      flex-direction: row;
+      display: flex;
+      margin-top: 7%;
+    }
+
+    #soins h3 {
+      text-align: left;
+    }
+
+    #imgmanu {
+      display: none;
+    }
+
+    #imgepil {
+      display: none;
+    }
+
+
+    #borderproduit {
+      display: none;
+    }
+
+    #borderpropos {
+      display: none;
+    }
+
+    #apropos {
+      display: flex;
+
+    }
+
+
+
+    #oceane {
+      width: 24%;
+      height: 24%;
+      margin-left: 5%;
+      margin-top: 3%;
+
+    }
+
+    #bio {
+      font-size: 20px;
+    }
+
+    #profil {
+      display: block;
+      margin-left: 4.5%;
+      font-size: 30px;
+    }
+
+    .navdesk div {
+      display: inline-block;
+      list-style-type: none;
+      margin-top: 1%;
+      background: #F7E6E1;
+      width: 30%;
+      margin-left: auto;
+      margin-right: auto;
+      height: 46px;
+      position: relative;
+    }
+
+    #divprofil p {
+      text-align: left;
+
+    }
+
+    #pictolocal {
+      margin-left: 4%;
+      width: 4%;
+      margin-right: 0;
+    }
+
+    #avron,
+    #tel {
+      margin-left: 7%;
+    }
+
+
+    #bonjour,
+    #aurevoir,
+    #divavron p {
+      font-size: 20px;
+    }
+
+    #aurevoir {
+      margin-bottom: 2%;
+    }
+
+    #coordonnes {
+      display: flex;
+
+    }
+
+    #adresse {
+      width: 100%;
+      margin-left: 7%;
+      margin-top: 1%;
+    }
+
+    .rdv {
+      display: block;
+    }
+
+
+    .rdv a {
+      text-decoration: none;
+      font-family: 'funkturm';
+      text-align: center;
+      background-color: white;
+      border-radius: 67px;
+      padding-left: 67;
+      padding-right: 67px;
+      padding-top: 28px;
+      padding-bottom: 28px;
+      color: #73a8a2;
+      border-style: solid;
+      border-width: 7px;
+      border-color: #73a8a2;
+      text-transform: uppercase;
+      font-size: 35px;
+
+    }
+
+    .rdv a:hover {
+      text-decoration: none;
+      font-family: 'funkturm';
+      text-align: center;
+      background-color: #73a8a2;
+      border-radius: 67px;
+      padding-left: 67;
+      padding-right: 67px;
+      padding-top: 28px;
+      padding-bottom: 28px;
+      color: #73a8a2;
+      border-style: solid;
+      border-width: 7px;
+      border-color: #73a8a2;
+      text-transform: uppercase;
+      font-size: 35px;
+      color: white;
+      opacity: 80%;
+
+    }
+
+    .rdv {
+      margin-left: 37%;
+      margin-bottom: 6%;
+      margin-top: 3%;
+
+    }
+
+
+
+
+
+  }
+
+
+  /*@media (min-width: 1300px) {
+  #headerBackground{
+    object-fit: cover;
+        top: 0px;
+        left: 0px;
+        min-width: 100%;
+        height: 25em;
+
+  }
+
+  header #logo{
+    position: absolute;
+    top: 2em;
+    width: 30em;
+    left: 45em;
+    align-self: center;
+  }
+
+  header p{
+    position: absolute;
+    width: 65%;
+    height: auto;
+    top: 5em;
+    left: 15em;
+    font-family: 'Raleway-bold';
+    font-style: italic;
+    color: white;
+    font-size: 45px;
+    text-align: left;
+  }
+  #titreoffre{
+    top: -3vh;
+    left: 43.5vw;
+  }
+  .prestations {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    /* align-content: space-between; */
+  /*align-items: center;
+    min-width: 100vw;
+    margin-top: 10%;
+  }
+  .prestations h3{
+    position: relative !important;
+  }
+  .texteprestation{
+    margin-top: 17% !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .dots{position: inherit !important;
+    align-self: center;
+  }
+
+  #produits{
+    margin-top: 10%;
+  }
+  #titreproduit{
+     top: -58%;
+    left: 3.5%;
+    min-width: 100%;
+  }
+  #produits p {
+    font-size: 1rem;
+    width: 50vw;
+    line-height: 2rem;
+  }
+  #bio{
+    width: 50vw;
+    font-size: 18px;
+    line-height: 2rem;
+  }
+  #titreavis{
+    margin-bottom: 6%;
+  }
+  footer img{
+    width: 70%;
+  }
+}
+*/

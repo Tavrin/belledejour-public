@@ -1,0 +1,12 @@
+<h3>Email de {{name}} </h3>
+<h4>adresse mail : {{email}} </h4>
+
+prestations voulues :
+
+<ul>
+    {% for check in choix %}
+
+    <li>{{check.name}} </li>
+
+    {% endfor %}
+</ul>

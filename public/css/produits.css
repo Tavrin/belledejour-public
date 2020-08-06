@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*
+header{
+        background: url(../img/bg2.png);
+    background-position: center;
+    background-size: cover;
+    height: 236px;
+
+}
+
+
+header #logo{
+    position: absolute;
+    top: 52px;
+    left: 30%;
+    width: 400px;
+
+} */
+
+#produits h2 {
+    text-align: center;
+    color: #73a8a2;
+    padding: 35px;
+    font-family: 'funkturm';
+    font-size: 49px;
+    margin-top: 14%;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    display: block;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+
+.image-principale {
+    top: 25%;
+}
+
+.images {
+    position: absolute;
+    margin: auto;
+    transition: ease-in-out 0.5s;
+    left: 0;
+    right: 0;
+    max-width: 25em;
+
+}
+
+.image-cachee {
+    opacity: 0;
+    visibility: hidden;
+    max-width: 0px;
+    max-height: 0px;
+    transition: ease-in-out 0.5s;
+}
+
+.image-secondaire {
+    top: 25%;
+
+    max-width: 15em;
+    opacity: 0.5;
+}
+
+.image-gauche {
+    left: -500px;
+
+}
+
+.image-droite {
+    left: 500px;
+
+}
+
+.image-secondaire:hover {
+    cursor: pointer;
+}
+
+/* .slider-container{
+    position: relative;
+} */
+
+.zone-texte {
+    position: absolute;
+    top: 105%;
+    width: 93%;
+    left: 3%;
+    text-align: center;
+
+}
+
+#produits p {
+    font-family: 'Raleway';
+    color: #707070;
+    font-size: 37px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+#produits h3 {
+    font-family: 'Raleway-bold';
+    color: #B14961;
+    font-size: 45px;
+    line-height: 0px;
+    margin-top: 20px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-weight: normal;
+
+}
+
+#produits {
+    height: 800px;
+    margin-top: -12%;
+}
+
+#avis h2 {
+    margin-top: 38%;
+}
+
+#descriptionprod {
+    font-family: 'Raleway';
+    font-style: italic;
+    color: #707070;
+    text-align: center;
+    font-size: 30px;
+    margin: 0% 3% 0% 3%;
+}
+
+#descriptionprod {
+    font-family: 'Raleway-bold';
+    font-style: italic;
+    color: #73a8a2;
+    text-align: center;
+    font-size: 38px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    /* padding-top: 10%; */
+    margin: 5% 16% 0% 16%;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+
+
+
+@media (min-width: 1000px) {
+
+    #descriptionprod {
+        padding-top: 2%;
+        padding-bottom: 2%;
+
+    }
+
+}
